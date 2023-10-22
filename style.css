@@ -30,7 +30,8 @@ body{
 }
 
 .product-images img {
-    height: 300px;
+    height: 400px;
+    position: relative;
 }
 .text h3{
     font-size: 2rem;
@@ -82,7 +83,7 @@ body{
     cursor: pointer;
     width: 50px;
     height: 30px;
-    background-color: #405574;
+    background-color: #8a5362;
     border-radius: 3px;
 }
 
@@ -102,4 +103,14 @@ button{
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(226, 163, 26);
+}
+.time{
+    color: white;
+    z-index: 20;
+    margin: 9rem 9rem;
+    position: absolute;
+    text-align: center;
+}
+#display{
+    font-size: 2rem;
 }
