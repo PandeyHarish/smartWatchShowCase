@@ -28,17 +28,32 @@ purple.addEventListener("click", function () {
     "assets/images/purple.png");
 });
 
-
 // code to display the time
- function showTime() {
-   const date = new Date();
-   const h = date.getHours();
-   const m = date.getMinutes();
-   const s = date.getSeconds();
+function showTime() {
+  const date = new Date();
+  const h = date.getHours();
+  const m = date.getMinutes();
+  const s = date.getSeconds();
 
-//    document.getElementsByClassName(".time").innerHTML(h + ":" + m + ":" + s);
-var div = document.getElementById("display");
-div.innerHTML = h + ":" + m + ":" + s;
-//    console.log(h);
- }
- setInterval(showTime, 1000);
+  var div = document.getElementById("display");
+  div.innerHTML = h + ":" + m + ":" + s;
+}
+setInterval(showTime, 1000);
+
+// toggle to hide show time and heart reate
+var time = document.getElementById("display-time");
+var heart = document.getElementById("display-heart");
+var btnTime = document.getElementById("btnTime");
+var btnHeart = document.getElementById("btnHeart");
+
+heart.style.display = "none";
+
+btnTime.addEventListener("click", function () {
+  heart.style.display = "none";
+  time.style.display = "block";
+});
+
+btnHeart.addEventListener("click", function () {
+  time.style.display = "none";
+  heart.style.display = "block";
+});

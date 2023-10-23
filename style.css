@@ -1,116 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap");
 
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
-
-
-
-body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
 }
-.nav-bar{
-    background-color: #405574;
+.nav-bar {
+  background-color: #405574;
 }
 
 .logo img {
-    padding: 15px;
-    height: 25px;
-    width: 100px;
+  padding: 15px;
+  height: 25px;
+  width: 100px;
 }
-.nav-bar{
-    height: 50px;
+.nav-bar {
+  height: 50px;
 }
-.logo{
-    text-align: center;
+.logo {
+  text-align: center;
 }
 
-.container{
-    display: flex;
-    margin: 5rem 10rem; 
+.container {
+  display: flex;
+  margin: 5rem 10rem;
 }
 
 .product-images img {
-    height: 400px;
-    position: relative;
+  height: 400px;
+  position: relative;
 }
-.text h3{
-    font-size: 2rem;
+.text h3 {
+  font-size: 2rem;
 }
-.text p{
-    margin-top: -1rem;
-    width: 40rem;
-    color: #405574;
-    font-size: 1rem;
-    line-height: 6mm;
-    word-wrap: break-word;
-    word-spacing: 1mm;
+.text p {
+  margin-top: -1rem;
+  width: 40rem;
+  color: #405574;
+  font-size: 1rem;
+  line-height: 6mm;
+  word-wrap: break-word;
+  word-spacing: 1mm;
 }
-.colors{
- display: inline-grid;
- grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
- gap: .5rem;
+.colors {
+  display: inline-grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+  gap: 0.5rem;
+}
+.color-blue {
+  cursor: pointer;
+  width: 50px;
+  height: 30px;
+  background-color: #565681;
+  border-radius: 3px;
+}
+.color-red {
+  cursor: pointer;
+  width: 50px;
+  height: 30px;
+  background-color: #ca3d22;
+  border-radius: 3px;
+}
+.color-black {
+  cursor: pointer;
+  width: 50px;
+  height: 30px;
+  background-color: #23211f;
+  border-radius: 3px;
+}
+.color-pink {
+  cursor: pointer;
+  width: 50px;
+  height: 30px;
+  background-color: #e9c7be;
+  border-radius: 3px;
+}
+.color-purple {
+  cursor: pointer;
+  width: 50px;
+  height: 30px;
+  background-color: #8a5362;
+  border-radius: 3px;
+}
 
+button {
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  padding: 4px 8px;
+  background-color: #e0e0e0;
 }
-.color-blue{
-    cursor: pointer;
-    width: 50px;
-    height: 30px;
-    background-color: #565681;
-    border-radius: 3px;
+.buy-now {
+  margin: 1rem;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(226, 163, 26);
 }
-.color-red{
-    cursor: pointer;
-    width: 50px;
-    height: 30px;
-    background-color: #ca3d22;
-    border-radius: 3px;
+.time {
+  color: white;
+  z-index: 20;
+  margin: 9rem 9rem;
+  position: absolute;
+  text-align: center;
 }
-.color-black{
-    cursor: pointer;
-    width: 50px;
-    height: 30px;
-    background-color: #23211f;
-    border-radius: 3px;
+#display {
+  font-size: 2rem;
 }
-.color-pink{
-    cursor: pointer;
-    width: 50px;
-    height: 30px;
-    background-color: #e9c7be;
-    border-radius: 3px;
+#display-heart {
+  color: white;
+  z-index: 20;
+  position: absolute;
+  text-align: center;
+  margin: 8.5rem 6rem 10.5rem 10.5rem;
 }
-.color-purple{
-    cursor: pointer;
-    width: 50px;
-    height: 30px;
-    background-color: #8a5362;
-    border-radius: 3px;
+#display-heart p {
+  margin-top: 0;
+  font-size: 1.5rem !important;
 }
-
-button{
-    font-family: 'Montserrat', sans-serif;
-    border: none;
-    cursor: pointer;
-    border-radius: .2rem;
-    padding: 4px 8px;
-    background-color: #e0e0e0;
-}
-.buy-now{
-    
-    margin: 1rem;
-    padding: 8px 16px;
-    cursor: pointer;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    background-color: rgb(226, 163, 26);
-}
-.time{
-    color: white;
-    z-index: 20;
-    margin: 9rem 9rem;
-    position: absolute;
-    text-align: center;
-}
-#display{
-    font-size: 2rem;
+.heart {
+  height: 50px !important;
 }
